@@ -7,7 +7,7 @@ from config import API_KEY
 
 api_key = API_KEY
 
-def find_finance_report(homepath, corp_code): ###### begin end는 8자리 날짜로 구성
+def find_finance_report(homepath, corp_code, begin, end): ###### begin end는 8자리 날짜로 구성
     disc_url = 'https://opendart.fss.or.kr/api/list.json'
     xbrl_url = 'https://opendart.fss.or.kr/api/document.xml'
     DartFile_path = os.path.join(homepath, 'DartFile')
@@ -23,8 +23,8 @@ def find_finance_report(homepath, corp_code): ###### begin end는 8자리 날짜
         params = {
             'crtfc_key': api_key,
             'corp_code': corp_code,
-            'bgn_de': '20240101', # 시작일
-            'end_de': '20241231', # 종료일
+            'bgn_de': begin, # 시작일
+            'end_de': end, # 종료일
             'page_count': 100,
             'page_no': page
         }
@@ -57,15 +57,18 @@ def find_finance_report(homepath, corp_code): ###### begin end는 8자리 날짜
                 with open(xbrl_zip_path, 'wb') as f:
                     f.write(requests.get(xbrl_url, params=file_params).content)
                 print(f'{xbrl_zip_path} 다운로드 완료!')
-
-                extract_folder_path = os.path.join(reports_path, f'xbrl_{rcept_no}')
-                with zipfile.ZipFile(xbrl_zip_path, 'r') as zip_ref:
-                    zip_ref.extractall(extract_folder_path)
-
-                # zip 파일 삭제
-                if os.path.exists(xbrl_zip_path):
-                    os.remove(xbrl_zip_path)
-                print(f'{extract_folder_path} 폴더에 압축 해제 완료!')
+                try:
+                    extract_folder_path = os.path.join(reports_path, f'xbrl_{rcept_no}')
+                    with zipfile.ZipFile(xbrl_zip_path, 'r') as zip_ref:
+                        zip_ref.extractall(extract_folder_path)
+                        print(f'{extract_folder_path} 폴더에 압축 해제 완료!')
+                except zipfile.BadZipFile:
+                    print(f'BadZipFile: {xbrl_zip_path}')
+                finally:
+                    if os.path.exists(xbrl_zip_path):
+                        os.remove(xbrl_zip_path)
+                        # zip 파일 삭제
+                
 
         # rate limit 대응 (0.7초 대기)
         time.sleep(0.7)
