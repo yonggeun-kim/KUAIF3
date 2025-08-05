@@ -11,7 +11,7 @@ xbrl_url = 'https://opendart.fss.or.kr/api/document.xml'
 DartFile_path = os.path.join(config.homePath, 'DartFile')
 
 def find_finance_report(corp_code, begin, end): ###### begin end는 8자리 날짜로 구성
-    reports_path = os.path.join(DartFile_path, str(corp_code) + 'finance_reports') ####찾은 보고서들 저장 위치
+    reports_path = os.path.join(DartFile_path, os.path.join(str(corp_code), 'finance_reports')) ####찾은 보고서들 저장 위치
     if not os.path.isdir(reports_path): 
         os.mkdir(reports_path)
     
@@ -55,7 +55,6 @@ def find_finance_report(corp_code, begin, end): ###### begin end는 8자리 날�
                 xbrl_zip_path = os.path.join(reports_path, f'{rcept_no}.zip')
                 with open(xbrl_zip_path, 'wb') as f:
                     f.write(requests.get(xbrl_url, params=file_params).content)
-                print(f'{xbrl_zip_path} 다운로드 완료!')
                 try:
                     extract_folder_path = os.path.join(reports_path, f'xbrl_{rcept_no}')
                     with zipfile.ZipFile(xbrl_zip_path, 'r') as zip_ref:
@@ -73,12 +72,22 @@ def find_finance_report(corp_code, begin, end): ###### begin end는 8자리 날�
 
 
 def find_other_report(corp_code, begin, end):
-    reports_path = os.path.join(DartFile_path, str(corp_code) + 'other_reports')
+    reports_path = os.path.join(DartFile_path, os.path.join(str(corp_code),'other_reports'))
     if not os.path.isdir(reports_path): 
         os.mkdir(reports_path)
     
     # 페이지네이션 설정
     max_pages = 10  # 최대 10페이지 (1000건까지 시도)
+
+    ########## 더 추가할 키워드 여기 있으면 여기에 추가하면됨 ########
+    performance_keywords = [
+    '잠정실적', 
+    '영업실적', 
+    '연간실적', 
+    '실적발표자료', 
+    '실적설명회자료'
+    ]
+    ########################################################
 
     for page in range(1, max_pages + 1):
         params = {
@@ -106,10 +115,9 @@ def find_other_report(corp_code, begin, end):
             rcept_no = item['rcept_no']
             
             ###############################
-            if '사업보고서' in report_nm or '반기보고서' in report_nm or '분기보고서' in report_nm:
+            if any(keyword in report_nm for keyword in performance_keywords):
                 print(f"다운로드: {report_nm} ({rcept_dt}) → rcept_no: {rcept_no}")
-            ########## 수정 ########
-
+            ###############################
 
                 #### 각각의 zip 다운 및 압축해제
                 file_params = {
@@ -120,7 +128,6 @@ def find_other_report(corp_code, begin, end):
                 xbrl_zip_path = os.path.join(reports_path, f'{rcept_no}.zip')
                 with open(xbrl_zip_path, 'wb') as f:
                     f.write(requests.get(xbrl_url, params=file_params).content)
-                print(f'{xbrl_zip_path} 다운로드 완료!')
                 try:
                     extract_folder_path = os.path.join(reports_path, f'xbrl_{rcept_no}')
                     with zipfile.ZipFile(xbrl_zip_path, 'r') as zip_ref:
