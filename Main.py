@@ -57,7 +57,7 @@ def main():
             print(profit_table.head())
 
         try:
-            csv_filename = f"{corp_code}_{target_corp}_손익계산서.csv"
+            csv_filename = f"_{target_corp}_손익계산서.csv"
             save_path = os.path.join(DartFile_path, csv_filename)
             profit_table.to_csv(save_path, index=False, encoding='utf-8-sig')
             print(f"\n성공: 손익계산서 데이터를 다음 경로에 저장했습니다:\n{os.path.abspath(save_path)}")
