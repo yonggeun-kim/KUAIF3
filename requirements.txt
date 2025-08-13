@@ -1,2 +1,2 @@
-pyarrow
-dart-fss>=0.4.13
+requests>=2.31.0,<3
+pandas
