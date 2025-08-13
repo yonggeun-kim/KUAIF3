@@ -4,7 +4,6 @@
 import os
 import pandas as pd
 import config
-import corpcode as cc ##corpcode 관련 함수들
 import reportfinder as rpf ###report finder 함수들
 import parser as ps #### 파싱함수
 from datetime import date
@@ -33,11 +32,11 @@ def main():
     
 
     # 1. 전체 기업 코드 다운로드
-    cc.download_cc()
+    rpf.download_cc()
 
     # 2. CORPCODE.xml에서 corp_code(기업코드) 찾기
     target_corp = input('정확한 기업명 입력:')
-    corp_code = cc.find_cc(target_corp)
+    corp_code = rpf.find_cc(target_corp)
     if not os.path.isdir(os.path.join(DartFile_path, corp_code)):
         os.mkdir(os.path.join(DartFile_path, corp_code))
     

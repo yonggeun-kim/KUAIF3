@@ -1,6 +1,7 @@
 import requests
 import zipfile
 import xml.etree.ElementTree as ET
+import pandas as pd
 import time
 import os
 import config
@@ -10,6 +11,28 @@ api_key = config.API_KEY
 disc_url = 'https://opendart.fss.or.kr/api/list.json'
 xbrl_url = 'https://opendart.fss.or.kr/api/document.xml'
 DartFile_path = os.path.join(config.homePath, 'DartFile')
+
+def download_cc():
+    corp_code_url = f'https://opendart.fss.or.kr/api/corpCode.xml?crtfc_key={api_key}'
+    with open('corpCode.zip', 'wb') as f:
+        f.write(requests.get(corp_code_url).content)
+    with zipfile.ZipFile('corpCode.zip', 'r') as zip_ref:
+        zip_ref.extractall(config.homePath)
+    if os.path.exists('corpCode.zip'):
+        os.remove('corpCode.zip')
+    print(f'기업코드 다운 완료')
+
+def find_cc(target_corp):
+    tree = ET.parse(os.path.join(config.homePath, 'CORPCODE.xml'))
+    root = tree.getroot()
+    corp_code = None
+
+    for el in tree.getroot().findall('list'):
+        if el.find('corp_name').text == target_corp:
+            corp_code = el.find('corp_code').text
+            print(f'{target_corp} corp_code:', corp_code)
+            break
+    return corp_code
 
 def find_finance_report(corp_code, begin, end): ###### begin end는 8자리 날짜로 구성
     reports_path = os.path.join(DartFile_path, str(corp_code)) ####찾은 보고서들 저장 위치
