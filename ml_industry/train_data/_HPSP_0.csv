@@ -1,0 +1,18 @@
+﻿"('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'concept_id')","('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'label_ko')","('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'label_en')","('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'class0')","('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'class1')","('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'class2')","('[D432425] 단일 포괄손익계산서, 성격별 분류, 세전 - 별도 | Statement of comprehensive income [alternative], by nature of expense - Separate financial statements (Unit: KRW)', 'class3')","('20240101-20241231', ('별도재무제표',))","('20230101-20231231', ('별도재무제표',))","('20220101-20221231', ('별도재무제표',))"
+entity01288827_udf_IS_2025320155638100OfStatementOfComprehensiveIncomeAbstract,매출액,Revenue,포괄손익계산서 [개요],매출액,,,181401607828.0,179086660832.0,159336322822.0
+entity01288827_udf_IS_20221024131339536_StatementOfComprehensiveIncomeAbstract,매출원가,Cost of sales,포괄손익계산서 [개요],매출원가,,,51789962159.0,60497746980.0,49236155095.0
+entity01288827_udf_IS_2022102413155473_StatementOfComprehensiveIncomeAbstract,매출총이익,Gross profit,포괄손익계산서 [개요],매출총이익,,,129611645669.0,118588913852.0,110100167727.0
+entity01288827_udf_IS_2022102413202459_StatementOfComprehensiveIncomeAbstract,판매비와관리비,Selling and administrative expenses,포괄손익계산서 [개요],판매비와관리비,,,35665951894.0,23382839425.0,24925705708.0
+dart_OperatingIncomeLoss,영업이익(손실),Operating income(loss),포괄손익계산서 [개요],영업이익(손실),,,93945693775.0,95206074427.0,85174462019.0
+dart_OtherGains,기타이익,Other gains,포괄손익계산서 [개요],기타이익,,,14440557861.0,3419809742.0,7179499142.0
+dart_OtherLosses,기타손실,Other losses,포괄손익계산서 [개요],기타손실,,,1800089680.0,2093340623.0,5625295725.0
+ifrs-full_FinanceIncome,금융수익,Finance income,포괄손익계산서 [개요],금융수익,,,7335017647.0,7862129987.0,356016681.0
+ifrs-full_FinanceCosts,금융원가,Finance costs,포괄손익계산서 [개요],금융원가,,,102125314.0,170562900.0,175384748.0
+ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),Profit (loss) before tax,포괄손익계산서 [개요],법인세비용차감전순이익(손실),,,113819054289.0,104224110633.0,86909297369.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용(수익),Tax expense (income),포괄손익계산서 [개요],법인세비용(수익),,,27538823227.0,23791708146.0,20903682426.0
+ifrs-full_ProfitLoss,당기순이익(손실),Profit (loss),포괄손익계산서 [개요],당기순이익(손실),,,86280231062.0,80432402487.0,66005614943.0
+ifrs-full_OtherComprehensiveIncome,기타포괄손익,Other comprehensive income,포괄손익계산서 [개요],기타포괄손익,,,-115555330.0,115940753.0,280915961.0
+entity01288827_udf_IS_20221028145751299_OtherComprehensiveIncome,후속적으로 당기손익으로 재분류되지 않는 항목,Items that will not be reclassified to profit or loss,포괄손익계산서 [개요],기타포괄손익,후속적으로 당기손익으로 재분류되지 않는 항목,,-115555330.0,115940753.0,280915961.0
+ifrs-full_ComprehensiveIncome,총포괄손익,Total comprehensive income,포괄손익계산서 [개요],총포괄손익,,,86164675732.0,80548343240.0,66286530904.0
+ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),Basic earnings (loss) per share,포괄손익계산서 [개요],주당이익 [개요],기본주당이익(손실),,1056.0,990.0,904.0
+ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),Diluted earnings (loss) per share,포괄손익계산서 [개요],주당이익 [개요],희석주당이익(손실),,1035.0,955.0,851.0

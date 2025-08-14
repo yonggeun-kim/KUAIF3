@@ -1,0 +1,18 @@
+﻿"('[D310000] 손익계산서, 기능별 분류 - 연결 | Income statement, by function of expense - Consolidated financial statements (Unit: USD)', 'concept_id')","('[D310000] 손익계산서, 기능별 분류 - 연결 | Income statement, by function of expense - Consolidated financial statements (Unit: USD)', 'label_ko')","('[D310000] 손익계산서, 기능별 분류 - 연결 | Income statement, by function of expense - Consolidated financial statements (Unit: USD)', 'label_en')","('[D310000] 손익계산서, 기능별 분류 - 연결 | Income statement, by function of expense - Consolidated financial statements (Unit: USD)', 'class0')","('[D310000] 손익계산서, 기능별 분류 - 연결 | Income statement, by function of expense - Consolidated financial statements (Unit: USD)', 'class1')","('[D310000] 손익계산서, 기능별 분류 - 연결 | Income statement, by function of expense - Consolidated financial statements (Unit: USD)', 'class2')","('20240101-20241231', ('연결재무제표',))","('20230101-20231231', ('연결재무제표',))","('20220101-20221231', ('연결재무제표',))"
+ifrs-full_Revenue,매출액,Sales,ifrs-full:IncomeStatementAbstract,매출액,,6269305000.0,7475741000.0,6673565000.0
+ifrs-full_CostOfSales,매출원가,Cost of sales,ifrs-full:IncomeStatementAbstract,매출원가,,-4809489000.0,-5655217000.0,-5165367000.0
+ifrs-full_GrossProfit,매출총이익,Gross profit,ifrs-full:IncomeStatementAbstract,매출총이익,,1459816000.0,1820524000.0,1508198000.0
+dart_TotalSellingGeneralAdministrativeExpenses,판매비와관리비,Selling general administrative expenses,ifrs-full:IncomeStatementAbstract,판매비와관리비,,-820949000.0,-755801000.0,-678749000.0
+dart_OperatingIncomeLoss,영업이익,Operating income,ifrs-full:IncomeStatementAbstract,영업이익,,638867000.0,1064723000.0,829449000.0
+dart_NonOperatingProfitLoss,영업외손익,Non-operating profit (loss),ifrs-full:IncomeStatementAbstract,영업외손익,,-53492000.0,-101608000.0,-143449000.0
+ifrs-full_FinanceIncome,금융수익,Finance income,ifrs-full:IncomeStatementAbstract,금융수익,,158924000.0,87998000.0,92883000.0
+ifrs-full_FinanceCosts,금융비용,Finance costs,ifrs-full:IncomeStatementAbstract,금융비용,,-180193000.0,-158253000.0,-219896000.0
+dart_OtherGains,기타영업외수익,Other gains,ifrs-full:IncomeStatementAbstract,기타영업외수익,,1999000.0,2402000.0,4594000.0
+dart_OtherLosses,기타영업외비용,Other losses,ifrs-full:IncomeStatementAbstract,기타영업외비용,,-34159000.0,-34170000.0,-22385000.0
+ifrs-full_ShareOfProfitLossOfAssociatesAccountedForUsingEquityMethod,지분법손익,Share of profit (loss) of associates accounted for using equity method,ifrs-full:IncomeStatementAbstract,지분법손익,,-63000.0,415000.0,1355000.0
+ifrs-full_ProfitLossBeforeTax,법인세차감전순이익,Profit (loss) before tax,ifrs-full:IncomeStatementAbstract,법인세차감전순이익,,585375000.0,963115000.0,686000000.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,Tax expense (income),ifrs-full:IncomeStatementAbstract,법인세비용,,-172346000.0,-257223000.0,-187485000.0
+ifrs-full_ProfitLoss,연결당기순이익,Profit (loss),ifrs-full:IncomeStatementAbstract,연결당기순이익,,413029000.0,705892000.0,498515000.0
+ifrs-full_ProfitLossAttributableToOwnersOfParent,지배기업 소유주지분,"Profit (loss), attributable to owners of parent",ifrs-full:IncomeStatementAbstract,연결당기순이익의 귀속 [개요],지배기업 소유주지분,413029000.0,705892000.0,498515000.0
+ifrs-full_BasicEarningsLossPerShare,기본주당순이익,Basic earnings (loss) per share,ifrs-full:IncomeStatementAbstract,주당이익 [개요],기본주당순이익,4.14,7.05,4.97
+ifrs-full_DilutedEarningsLossPerShare,희석주당순이익,Diluted earnings (loss) per share,ifrs-full:IncomeStatementAbstract,주당이익 [개요],희석주당순이익,4.13,7.04,4.97

@@ -1,0 +1,14 @@
+﻿"('[D310005] 손익계산서, 기능별 분류 - 별도 | Income statement, by function of expense - Separate financial statements (Unit: KRW)', 'concept_id')","('[D310005] 손익계산서, 기능별 분류 - 별도 | Income statement, by function of expense - Separate financial statements (Unit: KRW)', 'label_ko')","('[D310005] 손익계산서, 기능별 분류 - 별도 | Income statement, by function of expense - Separate financial statements (Unit: KRW)', 'label_en')","('[D310005] 손익계산서, 기능별 분류 - 별도 | Income statement, by function of expense - Separate financial statements (Unit: KRW)', 'class0')","('[D310005] 손익계산서, 기능별 분류 - 별도 | Income statement, by function of expense - Separate financial statements (Unit: KRW)', 'class1')","('[D310005] 손익계산서, 기능별 분류 - 별도 | Income statement, by function of expense - Separate financial statements (Unit: KRW)', 'class2')","('20240101-20241231', ('별도재무제표',))","('20230101-20231231', ('별도재무제표',))","('20220101-20221231', ('별도재무제표',))"
+ifrs-full_Revenue,영업수익,Revenue(Sales),당기손익 [개요],영업수익,,603899372784.0,592959670727.0,535783305933.0
+ifrs-full_CostOfSales,영업비용,Cost of sales,당기손익 [개요],영업비용,,582908786381.0,572434575246.0,516238686895.0
+dart_OperatingIncomeLoss,영업이익(손실),Operating income(loss),당기손익 [개요],영업이익(손실),,20990586403.0,20525095481.0,19544619038.0
+dart_OtherGains,기타수익,Other gains,당기손익 [개요],기타수익,,588651169.0,211738522.0,456204411.0
+dart_OtherLosses,기타비용,Other losses,당기손익 [개요],기타비용,,497367074.0,350823629.0,311108551.0
+ifrs-full_FinanceIncome,금융수익,Finance income,당기손익 [개요],금융수익,,1269060098.0,1031556808.0,1185932447.0
+ifrs-full_FinanceCosts,금융비용,Finance costs,당기손익 [개요],금융비용,,7928404247.0,5814433590.0,3048936635.0
+ifrs-full_OtherIncomeExpenseFromSubsidiariesJointlyControlledEntitiesAndAssociates,관계기업투자주식 손익 중 지분 해당액,"Share of income (expense) of associates, net of gains (losses) from investments in equity instruments",당기손익 [개요],관계기업투자주식 손익 중 지분 해당액,,1688615150.0,1974501495.0,2035895794.0
+ifrs-full_ProfitLossBeforeTax,법인세비용차감전순이익(손실),Profit (loss) before tax,당기손익 [개요],법인세비용차감전순이익(손실),,16111141499.0,17577635087.0,19862606504.0
+ifrs-full_IncomeTaxExpenseContinuingOperations,법인세비용,Tax expense,당기손익 [개요],법인세비용,,4249530964.0,3655848695.0,3945982806.0
+ifrs-full_ProfitLoss,당기순이익(손실),Profit (loss),당기손익 [개요],당기순이익(손실),,11861610535.0,13921786392.0,15916623698.0
+ifrs-full_BasicEarningsLossPerShare,기본주당이익(손실),Basic earnings (loss) per share,당기손익 [개요],주당이익 [개요],기본주당이익(손실),387.0,455.0,501.0
+ifrs-full_DilutedEarningsLossPerShare,희석주당이익(손실),Diluted earnings (loss) per share,당기손익 [개요],주당이익 [개요],희석주당이익(손실),387.0,455.0,501.0
